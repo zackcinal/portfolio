@@ -114,10 +114,12 @@
   h1.intro{
     display: flex;
     width: 350px;
+    font-size: medium;
   }
 
   p.about-me{
     width: 350px;
+    font-size: medium;
   }
 
   div.photo{
@@ -134,5 +136,9 @@
     align-items: center;
     flex-direction: column;
     margin-left: -50px;
+  }
+
+  .instagram-link{
+    padding: 0;
   }
 }
