@@ -122,4 +122,9 @@ nav {
     font-size: smaller;
     justify-content: right;
   }
+  
+  a:hover{
+    font-size: 14px;
+    transition: none;
+  }
 }
