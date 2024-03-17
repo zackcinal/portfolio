@@ -121,3 +121,25 @@ footer{
 .resume ul{
   padding-top: 20px;
 }
+
+@media (max-width: 430px) {
+  .lines{
+    display: none;
+  }
+
+  header ul{
+    flex-direction: column;
+  }
+
+  .project-container{
+    padding: 0 10px 0 10px;
+    text-align: center;
+  }
+
+  ul.rw-list{
+    margin-left: -20px;
+  }
+  ul.rw-list2{
+    margin-left: -20px;
+  }
+}

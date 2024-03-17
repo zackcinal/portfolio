@@ -16,20 +16,20 @@ function Resume() {
               <SiGmail />
               <a href="mailto:zekeriyacnl@gmail.com">zekeriyacnl@gmail.com</a>
             </li>
-            <li>|</li>
+            <li className="lines">|</li>
             <li>
               <a href="https://github.com/zackcinal" target="_blank">
                 <FaGithub /> GitHub
               </a>
             </li>
-            <li>|</li>
+            <li className="lines">|</li>
             <li>
               <a href="https://www.linkedin.com/in/zack-cinal/" target="_blank">
                 <BsLinkedin />
                 LinkedIn
               </a>
             </li>
-            <li>|</li>
+            <li className="lines">|</li>
             <li>
               <a href="https://docs.google.com/document/d/1WVsjv5hoh82BmzjUoCRS1HVRCqcMp6UdP41CN2wmgL0/edit?usp=sharing" target="_blank">
               <FaFileWord />

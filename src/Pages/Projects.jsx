@@ -9,7 +9,7 @@ function Projects() {
           <h1>Accio Knowledge</h1>
         </div>
             <p className="description">Accio Knowledge is a website about Harry Potter. You can explore books, movies, characters, spells etc.</p>
-        <div>
+        <div className="project-list">
             <ul className="rw-list">
                 <li>Software Engineer</li>
                 <li>|</li>
@@ -29,7 +29,7 @@ function Projects() {
           <h1>Modern Family API</h1>
         </div>
             <p className="description">Modern Family API allows users to access character information, explore seasons, and retrieve quotes from the show.</p>
-        <div>
+        <div className="project-list">
             <ul className="rw-list">
                 <li>Software Engineer</li>
                 <li>|</li>
