@@ -142,4 +142,8 @@ footer{
   ul.rw-list2{
     margin-left: -20px;
   }
+
+  footer{
+    position: absolute;
+  }
 }
