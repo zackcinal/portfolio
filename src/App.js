@@ -37,7 +37,7 @@ function App() {
           path="/"
           element={
             <div className="hello">
-              <h1 className="i-am-zack">Hello! I'm Zack.</h1>
+              <h1 className="i-am-zack">Hello! This is Zack.</h1>
               <h2 className="se">I am a software engineer...</h2>
             </div>
           }
