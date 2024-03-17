@@ -31,6 +31,7 @@ function App() {
           Work
         </Link>
       </nav>
+      <img className="logo" src="https://i.imgur.com/RgDmhxH.png" alt="logo" />
       <Routes>
         <Route
           path="/"
