@@ -110,6 +110,20 @@
  padding-left: 20px;
 }
 
+@media (max-width: 842px){
+  body{
+    background-image: none;
+  }
+
+  h1.intro{
+    width: 800px;
+  }
+
+  p.about-me{
+    width: 800px;
+  }
+}
+
 @media (max-width: 430px) {
   h1.intro{
     display: flex;
@@ -149,20 +163,6 @@
   
   .travel{
     padding-top: 0;
-  }
-}
-
-@media (max-width: 842px){
-  body{
-    background-image: none;
-  }
-
-  h1.intro{
-    width: 800px;
-  }
-
-  p.about-me{
-    width: 800px;
   }
 }
 
