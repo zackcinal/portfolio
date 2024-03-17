@@ -56,7 +56,7 @@ h2::after {
   height: 25px;
   margin-left: 5px;
   margin-bottom: -4px;
-  background-color: rgb(195, 224, 250);
+  background-color: black;
   animation: blinking-cursor 1s infinite;
 }
 
