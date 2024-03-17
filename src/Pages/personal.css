@@ -128,7 +128,7 @@
   }
 
   div.photos-container h3{
-    padding-left: 10px;
+    padding-left: 20px;
   }
 
   div.maps{
@@ -140,5 +140,14 @@
 
   .instagram-link{
     padding: 0;
+  }
+  
+  .whoami{
+    padding-left: 20px;
+    padding-right: 0;
+  }
+  
+  .travel{
+    padding-top: 0;
   }
 }
