@@ -144,6 +144,6 @@ footer{
   }
 
   footer{
-    position: absolute;
+    display: none;
   }
 }
