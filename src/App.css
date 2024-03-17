@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: url(./media/bg3.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(240, 236, 228);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.i-am-zack {
+  animation: fadeIn 2s ease-in-out;
+  align-self: center;
+  width: 400px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: left;
+  font-family: "Josefin Sans", sans-serif;
+  padding-left: 100px;
+  color: black;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
+}
+
+.se {
+  font-family: "Josefin Sans", sans-serif;
+  animation: fadeIn 2s ease-in-out;
+  align-self: center;
+  width: 400px;
+  display: flex;
+  justify-content: left;
+  padding-left: 100px;
+  color: black;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h2::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 25px;
+  margin-left: 5px;
+  margin-bottom: -4px;
+  background-color: rgb(195, 224, 250);
+  animation: blinking-cursor 1s infinite;
+}
+
+@keyframes blinking-cursor {
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+a:hover {
+  font-size: 18px;
+  transition: 0.3s ease-in-out;
+}
+
+.hello {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 90vh;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: aliceblue;
+}
+
+.line {
+  margin-top: -1px;
+  color: black;
 }

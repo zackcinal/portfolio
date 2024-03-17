@@ -1,0 +1,123 @@
+* {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.picture {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  width: 100%;
+}
+
+
+.img-of-me {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.name {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+ul.react-tabs__tab-list {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 40px 0 20px 0;
+  list-style: none;
+  font-size: large;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 0;
+}
+
+.react-tabs__tab {
+  padding: 10px;
+}
+
+.react-tabs__tab:hover {
+  border-bottom: 3px solid rgb(65, 108, 120);
+  transition: 0.25s ease-in-out;
+  color: rgb(65, 108, 120);
+}
+
+.header-name {
+  width: 100%;
+  justify-content: center;
+  padding-left: 0;
+  text-align: center;
+}
+
+header > h3 {
+  width: 100%;
+  justify-content: center;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+h3 {
+  text-align: center;
+  text-decoration: none;
+  padding-top: 20px;
+}
+
+section.about p {
+  text-align: center;
+}
+
+.skills-in {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: space-between;
+  padding-right: 30px;
+  padding-left: 30px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+section.skills {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+}
+
+.exp h2{
+  padding-left: 30px;
+}
+
+ul.experience{
+  list-style: none;
+}
+
+footer{ 
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.resume ul{
+  padding-top: 20px;
+}
