@@ -31,18 +31,16 @@ function Resume() {
             </li>
             <li className="lines">|</li>
             <li>
-              <a href="https://docs.google.com/document/d/1WVsjv5hoh82BmzjUoCRS1HVRCqcMp6UdP41CN2wmgL0/edit?usp=sharing" target="_blank">
-              <FaFileWord />
+              <a
+                href="https://docs.google.com/document/d/1WVsjv5hoh82BmzjUoCRS1HVRCqcMp6UdP41CN2wmgL0/edit?usp=sharing"
+                target="_blank"
+              >
+                <FaFileWord />
                 Resume
               </a>
             </li>
           </ul>
         </header>
-        <main>
-        </main>
-        <footer>
-          <p>&copy; Zack Cinal - 2024</p>
-        </footer>
       </div>
     </>
   );

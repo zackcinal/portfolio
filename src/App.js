@@ -1,11 +1,17 @@
-import { Link, Routes, Route, useNavigate } from "react-router-dom";
-import { useState } from "react";
-import "./App.css";
 import Personal from "./Pages/Personal";
 import Professional from "./Pages/Professional";
+import { Link, Routes, Route, useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import "./App.css";
+import 'ldrs/ring'
+import Lottie from "lottie-react";
+import Gradient from './Animations/Gradient.json'
+
 
 function App() {
   const [currentPage, setCurrentPage] = useState("/");
+  const [isLoading, setIsLoading] = useState(true);
+  const [data, setData] = useState(null);
   const navigate = useNavigate();
 
   const handleNavigation = (path) => {
@@ -13,15 +19,24 @@ function App() {
     navigate(path);
   };
 
+  useEffect(() => {
+    setTimeout(() => {
+      setData({ message: "Data fetched successfully!" });
+      setIsLoading(false);
+    }, 2000);
+  }, []);
+
   return (
     <div>
       <nav>
         <Link to="/" onClick={() => handleNavigation("/")}>
-          Home
+          Home <br/>
+          <span className="∩">∴</span>
         </Link>
         <p className="line">|</p>
         <Link to="/Personal" onClick={() => handleNavigation("/Personal")}>
           Personal
+          <span className="∩">∴</span>
         </Link>
         <p className="line">|</p>
         <Link
@@ -29,6 +44,7 @@ function App() {
           onClick={() => handleNavigation("/Professional")}
         >
           Work
+          <span className="∩">∴</span>
         </Link>
       </nav>
       <img className="logo" src="https://i.imgur.com/RgDmhxH.png" alt="logo" />
@@ -39,6 +55,7 @@ function App() {
             <div className="hello">
               <h1 className="i-am-zack">Hello! This is Zack.</h1>
               <h2 className="se">I am a software engineer...</h2>
+              <Lottie animationData={Gradient} className="lottie" loop={true}/>
             </div>
           }
         />

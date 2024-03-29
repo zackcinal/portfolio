@@ -3,6 +3,8 @@ import "./prof.css";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Resume from "./Resume";
 import Projects from "./Projects";
+import Lottie from "lottie-react";
+import Gradient from "../Animations/Gradient.json";
 
 function Professional() {
   return (
@@ -13,8 +15,18 @@ function Professional() {
       <div>
         <Tabs>
           <TabList>
-            <Tab>Contact</Tab>
-            <Tab>Projects</Tab>
+            <Tab>
+              <p>
+                Contact
+              </p>
+                <span className="∩1">∴</span>
+            </Tab>
+            <Tab>
+              <p>
+                Projects
+              </p>
+                <span className="∩1">∴</span>
+            </Tab>
           </TabList>
           <TabPanel>
             <div>
