@@ -1,5 +1,8 @@
 import React from "react";
 import "./personal.css";
+import Lottie from "lottie-react";
+import GradientForInsta from "../Animations/GradientForInsta.json";
+
 
 function Personal() {
   return (
@@ -7,7 +10,7 @@ function Personal() {
       <div className="personal-container">
         <div className="whoami">
           <h1 className="intro">
-            I'm Zack, a software engineer based in New York🗽
+            I'm Zack, a software engineer based in New York City🗽
           </h1>
           <p className="about-me">
             My passion for web development fuels my drive as a software
@@ -43,12 +46,13 @@ function Personal() {
           />
           <p className="instagram-link">
             <a href="https://www.instagram.com/zackcinal/" target="_blank">
-              See More on Instagram
+              <p className="see-more-insta">See More on Instagram</p>
             </a>
+            <Lottie animationData={GradientForInsta} className="lottieInsta" loop={true}/>
           </p>
         </div>
       </div>
-      <div className="travel">
+      {/* <div className="travel">
           <h3 className="travel-header">Traveling🧳</h3>
         <div className="usa-map">
           <p className="travel-p">
@@ -71,7 +75,7 @@ function Personal() {
         <div className="movies-in">
           Check my Letterboxd <a href="https://letterboxd.com/zackcinal/lists/" className="letterboxd" target="_blank">profile</a> to see my lists!
         </div>
-      </div>
+      </div> */}
       {/* <footer>
         <div>
           <p>Follow me:</p>

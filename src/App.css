@@ -1,3 +1,9 @@
+/* Fonts */
+/* font-family: "Libre Caslon Text", serif; */
+/* font-family: "Spectral", serif; */
+/* font-family: "Unbounded", sans-serif; */
+/* font-family: "Climate Crisis", sans-serif; */
+
 ::-webkit-scrollbar {
   width: 0;
   background: transparent;
@@ -11,7 +17,7 @@ body {
 }
 
 .lottie {
-  width: 500px;
+  width: 550px;
   z-index: -1;
   align-self: center;
   justify-self: center;
@@ -37,9 +43,10 @@ body {
   width: 400px;
   display: flex;
   justify-content: left;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Unbounded", sans-serif;
   padding-left: 100px;
-  color: black;
+  color: white;
+  font-size: 25px;
 }
 @keyframes fadeIn {
   from {
@@ -51,14 +58,15 @@ body {
 }
 
 .se {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Unbounded", sans-serif;
   animation: fadeIn 2s ease-in-out;
   align-self: center;
   width: 400px;
   display: flex;
   justify-content: left;
   padding-left: 100px;
-  color: black;
+  color: white;
+  font-size: 20px;
 }
 @keyframes fadeIn {
   from {
@@ -73,10 +81,10 @@ h2::after {
   content: "";
   display: inline-block;
   width: 2px;
-  height: 20px;
+  height: 23px;
   margin-left: 5px;
   margin-bottom: -4px;
-  background-color: black;
+  background-color: white;
   animation: blinking-cursor 1s infinite;
 }
 
@@ -94,11 +102,26 @@ a {
   color: rgb(0, 0, 0);
   text-decoration: none;
   transform: rotate(0.0001deg);
+  font-family: "Unbounded", sans-serif;
 }
 
-a:hover {
-  transform: translate(-1,6769, -3,1847);
+.nav-a:hover {
+  animation-name: floating;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
   transition: 1s ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 5px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
 }
 
 .hello {

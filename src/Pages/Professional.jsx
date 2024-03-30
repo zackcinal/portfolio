@@ -5,6 +5,7 @@ import Resume from "./Resume";
 import Projects from "./Projects";
 import Lottie from "lottie-react";
 import Gradient from "../Animations/Gradient.json";
+import Skills from "./Skills";
 
 function Professional() {
   return (
@@ -16,16 +17,13 @@ function Professional() {
         <Tabs>
           <TabList>
             <Tab>
-              <p>
-                Contact
-              </p>
-                <span className="∩1">∴</span>
+              <p>Contact</p>
             </Tab>
             <Tab>
-              <p>
-                Projects
-              </p>
-                <span className="∩1">∴</span>
+              <p>Projects</p>
+            </Tab>
+            <Tab>
+              <p>Skills</p>
             </Tab>
           </TabList>
           <TabPanel>
@@ -36,6 +34,11 @@ function Professional() {
           <TabPanel>
             <div>
               <Projects />
+            </div>
+          </TabPanel>
+          <TabPanel>
+            <div>
+              <Skills />
             </div>
           </TabPanel>
         </Tabs>

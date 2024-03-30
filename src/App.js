@@ -3,10 +3,9 @@ import Professional from "./Pages/Professional";
 import { Link, Routes, Route, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./App.css";
-import 'ldrs/ring'
+import "ldrs/ring";
 import Lottie from "lottie-react";
-import Gradient from './Animations/Gradient.json'
-
+import Gradient from "./Animations/Gradient.json";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("/");
@@ -29,12 +28,16 @@ function App() {
   return (
     <div>
       <nav>
-        <Link to="/" onClick={() => handleNavigation("/")}>
-          Home <br/>
+        <Link to="/" onClick={() => handleNavigation("/")} className="nav-a">
+          Home <br />
           <span className="∩">∴</span>
         </Link>
         <p className="line">|</p>
-        <Link to="/Personal" onClick={() => handleNavigation("/Personal")}>
+        <Link
+          to="/Personal"
+          onClick={() => handleNavigation("/Personal")}
+          className="nav-a"
+        >
           Personal
           <span className="∩">∴</span>
         </Link>
@@ -42,6 +45,7 @@ function App() {
         <Link
           to="/Professional"
           onClick={() => handleNavigation("/Professional")}
+          className="nav-a"
         >
           Work
           <span className="∩">∴</span>
@@ -55,7 +59,7 @@ function App() {
             <div className="hello">
               <h1 className="i-am-zack">Hello! This is Zack.</h1>
               <h2 className="se">I am a software engineer...</h2>
-              <Lottie animationData={Gradient} className="lottie" loop={true}/>
+              <Lottie animationData={Gradient} className="lottie" loop={true} />
             </div>
           }
         />

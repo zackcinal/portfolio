@@ -21,6 +21,8 @@ div.projects h1 {
     display: flex;
     justify-content: center;
     text-decoration: underline;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 200;
 }
 
 .rw-list {
@@ -41,8 +43,10 @@ div.projects h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Spectral", serif;
 }
 
 .description{
   margin: 0;
+  text-align: center;
 }
