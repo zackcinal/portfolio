@@ -1,86 +1,102 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./personal.css";
 import Lottie from "lottie-react";
 import GradientForInsta from "../Animations/GradientForInsta.json";
 
-
 function Personal() {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const calculateParallax = (depth) => {
+    return -scrollY * depth;
+  };
+
   return (
     <div className="personal">
       <div className="personal-container">
         <div className="whoami">
-          <h1 className="intro">
-            I'm Zack, a software engineer based in New York City🗽
-          </h1>
-          <p className="about-me">
-            My passion for web development fuels my drive as a software
-            engineer. I thrive in environments where I can utilize my technical
-            expertise to create user-friendly websites that deliver tangible
-            value and contribute to a positive user experience.
-          </p>
-          <p className="about-me">
-            I like watching movies and F1, traveling and photography.
-          </p>
+          <div className="whoami-2">
+            <h1 className="intro">
+              I'm Zack, a software engineer based in New York City🗽
+            </h1>
+            <p className="about-me">
+              Thriving in collaborative environments, I leverage my software
+              engineering skills to craft user-friendly websites that deliver
+              clear value and exceptional user experiences. My constant drive
+              for improvement keeps me learning and pushing boundaries.
+            </p>
+          </div>
+          <img
+            src="https://i.imgur.com/IFSvpEw.jpeg"
+            alt="My picture"
+            className="img-me"
+            style={{ transform: `translateY(${calculateParallax(0.3)}px)` }}
+          />
         </div>
       </div>
       <div className="photos-container">
-        <h3>Photography📷</h3>
-        <div className="photo">
+        <div
+          className="williamsburg-img"
+          style={{ transform: `translateY(${calculateParallax(0.5)}px)` }}
+        >
           <img
             src="https://i.imgur.com/4aQJrSE.jpeg"
-            alt="photo"
-            className="sample-img1"
-            title="Williamsburg, NY"
+            alt="williamsburg"
+            className="img-william"
           />
-          <img
-            src="https://i.imgur.com/CvJTx0L.jpg"
-            alt="photo"
-            className="sample-img2"
-            title="Empire States Building"
-          />
-          <img
-            src="https://i.imgur.com/8oMAPxv.jpg"
-            alt="photo"
-            className="sample-img3"
-            title="Horseshoe Bend, AZ"
-          />
-          <p className="instagram-link">
-            <a href="https://www.instagram.com/zackcinal/" target="_blank">
-              <p className="see-more-insta">See More on Instagram</p>
-            </a>
-            <Lottie animationData={GradientForInsta} className="lottieInsta" loop={true}/>
+          <h4 className="travel-info">Traveling</h4>
+          <p className="travel-info">
+            Travel has always been a strong pull for me. I seize every chance to
+            explore new destinations, because while you can always earn a
+            living, these windows of opportunity can be fleeting. he excitement
+            of encountering something unseen is what drives me, wherever the
+            destination. I've been fortunate to experience both Europe and the
+            United States, with Prague and Arizona leaving a lasting impression
+            on me.
           </p>
         </div>
-      </div>
-      {/* <div className="travel">
-          <h3 className="travel-header">Traveling🧳</h3>
-        <div className="usa-map">
-          <p className="travel-p">
-            I'm a passionate traveler, exploration is my fuel. While you can
-            always earn more money, unique experiences often have a limited
-            window. That's why I prioritize exploring new places. I've been
-            fortunate to travel across Europe and the US, soaking in the charm
-            of Prague, the vibrant food scene of Miami, and the majestic
-            landscapes of Arizona. Now, I have my sights set on experiencing the
-            natural wonders of Hawaii and Alaska. Next stop, bucket list!
-          </p>
-          <div className="maps">
-            <img className="usa-map-img" src="https://i.imgur.com/aykRblH.png" alt="usa-map" />
-            <img className="eu-map-img" src="https://i.imgur.com/AqEhv9j.png" alt="eu-map" />
+        <div className="photography-text">
+          <div className="text-content">
+            <h3>What do I do except coding?</h3>
+            <p className="about-photography">
+              <h4>I like photography...</h4>
+              I've loved photography since I was young, but it truly came alive
+              for me when I moved to New York City. I began by capturing the
+              city's architecture, but on vacations, I found myself drawn to
+              nature photography.
+            </p>
+            <p className="instagram-link">
+              <Lottie
+                animationData={GradientForInsta}
+                className="lottieInsta"
+                loop={true}
+              />
+              <a href="https://www.instagram.com/zackcinal/" target="_blank" className="instagram-linking">
+                <p className="see-more-insta">See More on Instagram <br /> @zackcinal</p>
+              </a>
+            </p>
+          </div>
+          <div className="traveling-container">
+            <div
+              style={{ transform: `translateY(${calculateParallax(0.7)}px)` }}
+            >
+              <img
+                src="https://i.imgur.com/9cyBtIY_d.webp?maxwidth=1520&fidelity=grand"
+                className="travel-image"
+              />
+            </div>
           </div>
         </div>
       </div>
-      <div className="movies">
-        <h3 className="movies-header">Movies🍿</h3>
-        <div className="movies-in">
-          Check my Letterboxd <a href="https://letterboxd.com/zackcinal/lists/" className="letterboxd" target="_blank">profile</a> to see my lists!
-        </div>
-      </div> */}
-      {/* <footer>
-        <div>
-          <p>Follow me:</p>
-        </div>
-      </footer> */}
     </div>
   );
 }

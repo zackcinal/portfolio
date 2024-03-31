@@ -1,0 +1,16 @@
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    height: 30vh;
+    align-items: center;
+}
+
+.skill-svg{
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+}
+
+/* svg:hover{
+    border: 0.8px solid black;
+} */
