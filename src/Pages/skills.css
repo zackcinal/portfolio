@@ -1,16 +1,21 @@
-.icons{
-    display: flex;
-    justify-content: space-evenly;
-    height: 30vh;
-    align-items: center;
+.logos {
+  width: 200px;
+  background-image: url(../Animations/Gradient.json);
 }
 
-.skill-svg{
-    width: 100px;
-    height: 100px;
-    padding: 5px;
+.icons-container {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
 }
 
-/* svg:hover{
-    border: 0.8px solid black;
-} */
+.skills-container {
+  margin: 40px 0 40px 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
