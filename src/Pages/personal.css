@@ -162,17 +162,13 @@ h4.travel-info {
   }
 
   p.about-me {
-    width: 100vw;
+    width: 90vw;
     font-size: medium;
   }
 
   div.photo {
     padding-left: 10px;
     overflow: auto;
-  }
-
-  div.photos-container h3 {
-    padding-left: 20px;
   }
 
   div.maps {
@@ -187,8 +183,14 @@ h4.travel-info {
   }
 
   .whoami {
-    padding-left: 20px;
+    /* padding-left: 40px; */
     padding-right: 0;
+    margin-left: -40px;
+  }
+
+  .photos-container{
+    gap: 0;
+    margin-left: -40px;
   }
 
   .travel {

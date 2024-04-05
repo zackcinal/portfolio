@@ -32,7 +32,7 @@ function Resume() {
             <li className="lines">|</li>
             <li>
               <a
-                href="https://docs.google.com/document/d/1WVsjv5hoh82BmzjUoCRS1HVRCqcMp6UdP41CN2wmgL0/edit?usp=sharing"
+                href="https://docs.google.com/document/d/1WtSVMDlPKicokyLXypiJY7tB2_AqfEFla3nGg2Yxl6I/edit?usp=sharing"
                 target="_blank"
               >
                 <FaFileWord />

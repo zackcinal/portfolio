@@ -171,4 +171,16 @@ ul.experience {
   footer {
     display: none;
   }
+  ul.react-tabs__tab-list{
+    display: flex;
+    gap: 10px;
+  }
+
+  li.lines {
+    display: none;
+  }
+
+  img.logos{
+    width: 50px;
+  }
 }

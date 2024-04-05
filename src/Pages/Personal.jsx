@@ -66,7 +66,7 @@ function Personal() {
         </div>
         <div className="photography-text">
           <div className="text-content">
-            <h3>What do I do except coding?</h3>
+            <h3>What do I do besides coding?</h3>
             <p className="about-photography">
               <h4>I like photography...</h4>
               I've loved photography since I was young, but it truly came alive
