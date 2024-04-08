@@ -9,6 +9,46 @@
   background: transparent;
 }
 
+#light .switch label {
+  color: black;
+}
+
+#dark .switch label {
+  color: white;
+}
+
+#dark {
+  background-color: #342d1f;
+}
+
+#dark a {
+  color: white;
+}
+
+#dark .line {
+  color: white;
+}
+
+#dark .lottie {
+  position: relative;
+  z-index: 1;
+}
+
+#dark .i-am-zack,
+.se {
+  z-index: 2;
+}
+
+.switch {
+  display: flex;
+  float: right;
+  margin-top: -40px;
+  margin-right: 50px;
+  font-family: "Unbounded", sans-serif;
+  align-items: center;
+  gap: 10px;
+}
+
 body {
   background-size: 100%;
   background-repeat: no-repeat;
@@ -38,7 +78,7 @@ body {
 }
 
 .i-am-zack {
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 0.8s ease-in-out;
   align-self: center;
   width: 400px;
   display: flex;
@@ -59,7 +99,7 @@ body {
 
 .se {
   font-family: "Unbounded", sans-serif;
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 0.8s ease-in-out;
   align-self: center;
   width: 400px;
   display: flex;

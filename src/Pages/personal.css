@@ -1,5 +1,17 @@
+* {
+  scroll-behavior: smooth;
+}
+
 .personal-container {
   margin-top: 50px;
+}
+
+#dark *{
+  color: white;
+}
+
+#dark .lottieInsta {
+  z-index: 0;
 }
 
 .whoami {
