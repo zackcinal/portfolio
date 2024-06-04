@@ -74,8 +74,8 @@ function Personal() {
           <div className="photography-text">
             <div className="text-content">
               <h3>What do I do besides coding?</h3>
+              <h4>I like photography...</h4>
               <p className="about-photography">
-                <h4>I like photography...</h4>
                 I've loved photography since I was young, but it truly came
                 alive for me when I moved to New York City. I began by capturing
                 the city's architecture, but on vacations, I found myself drawn

@@ -1,0 +1,111 @@
+.landing-container {
+  display: flex;
+  margin-top: 15vh;
+  margin-bottom: 20vh;
+}
+
+.lottie {
+  width: 45vw;
+  z-index: -1;
+  align-self: center;
+  justify-self: center;
+  margin-top: -320px;
+}
+
+.i-am-zack {
+  animation: fadeIn 0.8s ease-in-out;
+  display: flex;
+  font-family: "Unbounded", sans-serif;
+  color: black;
+  font-size: 40px;
+  margin-left: 15vw;
+}
+
+.sliding-text {
+  font-family: "Unbounded", sans-serif;
+  display: flex;
+  flex-direction: row;
+  width: 40vw;
+  justify-content: flex-start;
+  margin-left: 15vw;
+  color: black;
+  gap: 1vw;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h2::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 23px;
+  margin-left: 5px;
+  margin-bottom: -4px;
+  background-color: black;
+  animation: blinking-cursor 1s infinite;
+}
+
+@keyframes blinking-cursor {
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.hello {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  justify-content: center;
+}
+
+.my-image-container{
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  border-left: 1px solid #d6d6da;
+}
+
+.my-image{
+  width: 20vw;
+  border-radius: 50%;
+}
+
+@media (max-width: 430px) {
+  .lottie {
+    margin-top: -250px;
+    width: 400px;
+  }
+
+  .i-am-zack {
+    font-size: 18px;
+    width: auto;
+  }
+
+  .se {
+    font-size: 15px;
+  }
+
+  .switch {
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  .i-am-zack {
+    padding-left: 0;
+  }
+  .se {
+    width: 350px;
+  }
+}

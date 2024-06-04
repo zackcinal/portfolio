@@ -1,8 +1,4 @@
-* {
-  scroll-behavior: smooth;
-}
-
-.personal-container {
+.personal-container { 
   margin-top: 50px;
 }
 
@@ -228,7 +224,6 @@ h4.travel-info {
   }
 
   .about-photography{
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
   }
@@ -236,13 +231,13 @@ h4.travel-info {
   .instagram-link{
     margin-left: -100px;
   }
-}
-
-@media (max-width: 1200px) {
+  
   div.photos-container h3 {
     padding-left: 40px;
   }
+}
 
+@media (max-width: 1200px) {
   div.photo {
     padding-left: 40px;
   }
