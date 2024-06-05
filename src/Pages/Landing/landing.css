@@ -96,6 +96,7 @@ h2::after {
   .landing-container {
     flex-direction: column;
     margin-top: 2vh;
+    margin-bottom: 10vh;
   }
 
   .sliding-text {
