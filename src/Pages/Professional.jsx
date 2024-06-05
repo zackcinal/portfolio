@@ -1,7 +1,6 @@
 import "./prof.css";
 import Resume from "./Resume";
 import Skills from "./Skills";
-import Projects from "./Projects";
 import React, { useState, useEffect } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
@@ -17,7 +16,7 @@ function Professional() {
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className="main-prof" id={theme}>
         <div className="picture">
-          <img src="https://i.imgur.com/7TvofFD.jpeg" className="img-of-me" />
+          <h1 className="lets-work-together">Let's Work Together!</h1>
         </div>
         <div>
           <Tabs>
@@ -26,20 +25,12 @@ function Professional() {
                 <p>Contact</p>
               </Tab>
               <Tab>
-                <p>Projects</p>
-              </Tab>
-              <Tab>
                 <p>Skills</p>
               </Tab>
             </TabList>
             <TabPanel>
               <div>
                 <Resume />
-              </div>
-            </TabPanel>
-            <TabPanel>
-              <div>
-                <Projects />
               </div>
             </TabPanel>
             <TabPanel>

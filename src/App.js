@@ -7,10 +7,17 @@ import { Routes, Route } from "react-router-dom";
 import NavBar from "./Pages/NavBar/Navbar.jsx";
 import Landing from "./Pages/Landing/Landing.jsx";
 
+export const ThemeContext = React.createContext(null);
+
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState(null);
-  
+
+  const [theme, setTheme] = useState("light");
+  const toggleTheme = () => {
+    setTheme((curr) => (curr === "light" ? "dark" : "light"));
+  };
+
   useEffect(() => {
     setTimeout(() => {
       setData({ message: "Data fetched successfully!" });
@@ -19,8 +26,9 @@ function App() {
   }, []);
 
   return (
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div>
-        <div className="App">
+        <div className="App" id={theme}>
           <div>
             <NavBar />
           </div>
@@ -31,6 +39,7 @@ function App() {
           </Routes>
         </div>
       </div>
+    </ThemeContext.Provider>
   );
 }
 

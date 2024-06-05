@@ -10,7 +10,7 @@ function Resume() {
       <div className="resume">
         <header>
           <h1 className="header-name">Zack Cinal</h1>
-          <h3>Software Engineer</h3>
+          <h3>Full Stack Software Engineer</h3>
           <ul>
             <li>
               <SiGmail />
@@ -32,7 +32,7 @@ function Resume() {
             <li className="lines">|</li>
             <li>
               <a
-                href="https://docs.google.com/document/d/1cDp1LPBmyUXmR-HaYw9J-OaAH_KMx7T0NQpdd-wqH2k/edit?usp=sharing"
+                href="https://olive-jerrilyn-8.tiiny.site/"
                 target="_blank"
               >
                 <FaFileWord />
