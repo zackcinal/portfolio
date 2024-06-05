@@ -1,0 +1,71 @@
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 1s ease, background-color 1s ease;
+  }
+  
+  .logo-container {
+    animation: slideUp 2s forwards;
+  }
+  
+  @keyframes slideUp {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-calc(50vw - 50%), -calc(50vh - 50%));
+    }
+  }
+  
+  .logo {
+    width: 100px;
+  }
+  
+  .hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .landing-container {
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  
+  .landing-container:not(.hidden) {
+    opacity: 1;
+  }
+
+.loader {
+    width: 120px;
+    height: 20px;
+    background: 
+      linear-gradient(#000 50%,#0000 0),
+      linear-gradient(#0000 50%,#000 0),
+      linear-gradient(#000 50%,#0000 0),
+      linear-gradient(#0000 50%,#000 0),
+      linear-gradient(#000 50%,#0000 0),
+      linear-gradient(#0000 50%,#000 0)
+      #ddd;
+    background-size: calc(100%/6 + 1px) 200%;
+    background-repeat: no-repeat;
+    animation: l12 1.4s infinite;
+  }
+  @keyframes l12 {
+    0%     {background-position: calc(0*100%/5) 100%,calc(1*100%/5)   0%,calc(2*100%/5) 100%,calc(3*100%/5)   0%,calc(4*100%/5) 100%,calc(5*100%/5)   0%}
+    16.67% {background-position: calc(0*100%/5)   0%,calc(1*100%/5)   0%,calc(2*100%/5) 100%,calc(3*100%/5)   0%,calc(4*100%/5) 100%,calc(5*100%/5)   0%}
+    33.33% {background-position: calc(0*100%/5)   0%,calc(1*100%/5) 100%,calc(2*100%/5) 100%,calc(3*100%/5)   0%,calc(4*100%/5) 100%,calc(5*100%/5)   0%}
+    50%    {background-position: calc(0*100%/5)   0%,calc(1*100%/5) 100%,calc(2*100%/5)   0%,calc(3*100%/5)   0%,calc(4*100%/5) 100%,calc(5*100%/5)   0%}
+    66.67% {background-position: calc(0*100%/5)   0%,calc(1*100%/5) 100%,calc(2*100%/5)   0%,calc(3*100%/5) 100%,calc(4*100%/5) 100%,calc(5*100%/5)   0%}
+    83.33% {background-position: calc(0*100%/5)   0%,calc(1*100%/5) 100%,calc(2*100%/5)   0%,calc(3*100%/5) 100%,calc(4*100%/5)   0%,calc(5*100%/5)   0%}
+    100%   {background-position: calc(0*100%/5)   0%,calc(1*100%/5) 100%,calc(2*100%/5)   0%,calc(3*100%/5) 100%,calc(4*100%/5)   0%,calc(5*100%/5) 100%}
+  }
+  

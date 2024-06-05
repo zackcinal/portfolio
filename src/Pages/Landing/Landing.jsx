@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import TextTransition, { presets } from "react-text-transition";
 import Works from "../Works/Works";
 import Footer from "../Footer/Footer";
+import '../Loading/loading.css';
 
 const TEXTS = [
   " Software Engineer 💻",
@@ -12,16 +13,31 @@ const TEXTS = [
 ];
 
 function Landing() {
-  const [index, setIndex] = React.useState(0);
+  const [index, setIndex] = useState(0);
+  const [loading, setLoading] = useState(true);
 
-  React.useEffect(() => {
-    const intervalId = setInterval(() => setIndex((index) => index + 1), 2000);
-    return () => clearTimeout(intervalId);
+  useEffect(() => {
+    const intervalId = setInterval(() => setIndex(index => index + 1), 2000);
+    return () => clearInterval(intervalId);
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (
     <div>
-      <div className="landing-container">
+      <div className={`loading-screen ${loading ? "" : "hidden"}`}>
+        <div className="logo-container">
+          <img src="https://i.imgur.com/tOysSFo.png" alt="Logo" className="logo" />
+          <div class="loader"></div>
+        </div>
+      </div>
+      <div className={`landing-container ${loading ? "hidden" : ""}`}>
         <div className="hello">
           <h1 className="i-am-zack">Hello! This is Zack.</h1>
           <h2 className="sliding-text">
