@@ -70,31 +70,22 @@ h2::after {
   justify-content: center;
 }
 
-.my-image-container{
+.my-image-container {
   width: 50vw;
   display: flex;
   justify-content: center;
   border-left: 1px solid #d6d6da;
 }
 
-.my-image{
+.my-image {
   width: 20vw;
   border-radius: 50%;
 }
 
 @media (max-width: 430px) {
-  .lottie {
-    margin-top: -250px;
-    width: 400px;
-  }
-
   .i-am-zack {
     font-size: 18px;
     width: auto;
-  }
-
-  .se {
-    font-size: 15px;
   }
 
   .switch {
@@ -102,10 +93,31 @@ h2::after {
     margin-top: 0;
   }
 
-  .i-am-zack {
-    padding-left: 0;
+  .landing-container {
+    flex-direction: column;
+    margin-top: 2vh;
   }
-  .se {
-    width: 350px;
+
+  .sliding-text {
+    flex-direction: column;
+    width: 85vw;
+    margin-bottom: 5vh;
+  }
+
+  .my-image {
+    width: 60vw;
+    margin-left: 50vw;
+  }
+
+  .sliding-text::after{
+    content: none;
+  }
+
+  .my-image-container{
+    border-left: none;
+  }
+
+  .hello{
+    margin-top: 7vh;
   }
 }

@@ -12,8 +12,14 @@
   margin-left: 10vw;
 }
 
-.svgs{
-    display: flex;
-    gap: 15px;
-    margin-left: 10vw;
+.svgs {
+  display: flex;
+  gap: 15px;
+  margin-left: 10vw;
+}
+
+@media (max-width: 430px) {
+  .footer h1 {
+    padding-top: 8vh;
+  }
 }

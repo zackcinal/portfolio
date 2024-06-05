@@ -1,6 +1,5 @@
 import "./landing.css";
 import React, { useState, useEffect } from "react";
-import Lottie from "lottie-react";
 import TextTransition, { presets } from "react-text-transition";
 import Works from "../Works/Works";
 import Footer from "../Footer/Footer";

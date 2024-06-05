@@ -142,7 +142,7 @@ function Works() {
             </div>
             <img
               src="https://i.imgur.com/oZ3RCpB.png"
-              className="real-reel-img"
+              className="accio-img"
             />
           </div>
         </div>
