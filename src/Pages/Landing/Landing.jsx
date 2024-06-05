@@ -33,7 +33,7 @@ function Landing() {
     <div>
       <div className={`loading-screen ${loading ? "" : "hidden"}`}>
         <div className="logo-container">
-          <img src="https://i.imgur.com/tOysSFo.png" alt="Logo" className="logo" />
+          <img src="https://i.imgur.com/tOysSFo.png" alt="Logo" className="Logo" />
           <div class="loader"></div>
         </div>
       </div>
