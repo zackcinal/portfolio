@@ -14,7 +14,7 @@ function Resume() {
           <ul>
             <li>
               <SiGmail />
-              <a href="mailto:zekeriyacnl@gmail.com">zekeriyacnl@gmail.com</a>
+              <a href="mailto:zackcinal1@gmail.com">zackcinal1@gmail.com</a>
             </li>
             <li className="lines">|</li>
             <li>
