@@ -13,7 +13,7 @@ function Works() {
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("visible");
           observer.unobserve(entry.target);
@@ -21,7 +21,7 @@ function Works() {
       });
     }, options);
 
-    workContainersRef.current.forEach(container => {
+    workContainersRef.current.forEach((container) => {
       if (container) {
         observer.observe(container);
       }
@@ -29,7 +29,7 @@ function Works() {
 
     return () => {
       if (workContainersRef.current) {
-        workContainersRef.current.forEach(container => {
+        workContainersRef.current.forEach((container) => {
           if (container) {
             observer.unobserve(container);
           }
@@ -39,13 +39,57 @@ function Works() {
   }, []);
 
   const scrollToWorks = () => {
-    worksSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+    worksSectionRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <div className="works-container" ref={worksSectionRef}>
-      <h1 className="works-header" onClick={scrollToWorks}>Works</h1>
-      <div className="work-cont" ref={el => workContainersRef.current[0] = el}>
+      <h1 className="works-header" onClick={scrollToWorks}>
+        Works
+      </h1>
+      <div
+        className="work-cont"
+        ref={(el) => (workContainersRef.current[0] = el)}
+      >
+        <div className="works-0">
+          <h1>Pet Care by Kubra</h1>
+          <div className="explanation">
+            <div className="left-side">
+              <p>
+                Pet Care by Kubra is a website for dog walking services where
+                customers can sign up, add their dogs to the database, make new
+                walking reservations, and view their bookings.
+              </p>
+              <h5 className="cards">Built with React, Python & PostgreSQL</h5>
+              <div className="links">
+                <a
+                  href="https://github.com/zackcinal/dogwalksbykubra-frontend"
+                  target="_blank"
+                >
+                  Go to GitHub🔒
+                </a>
+                <a href="https://petcarebykubra.com/" target="_blank">
+                  Go to Website
+                </a>
+              </div>
+            </div>
+            <div className="images-div">
+              <img
+                src="https://i.imgur.com/G9hTvR2.png"
+                className="petcare-image"
+              />
+              <img
+                src="https://i.imgur.com/gcG6CWC.png"
+                className="petcare-image2"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="work-cont"
+        ref={(el) => (workContainersRef.current[1] = el)}
+      >
         <div className="works-1">
           <h1>code.Pal</h1>
           <div className="explanation">
@@ -67,7 +111,7 @@ function Works() {
                   href="https://dev--jovial-macaron-61c636.netlify.app"
                   target="_blank"
                 >
-                  Go to code.Pal
+                  Go to Website
                 </a>
               </div>
             </div>
@@ -78,7 +122,10 @@ function Works() {
           </div>
         </div>
       </div>
-      <div className="work-cont" ref={el => workContainersRef.current[1] = el}>
+      <div
+        className="work-cont"
+        ref={(el) => (workContainersRef.current[2] = el)}
+      >
         <div className="works-2">
           <h1>The Real Reel</h1>
           <div className="explanation">
@@ -105,14 +152,17 @@ function Works() {
                   className="real-reel-link"
                   target="_blank"
                 >
-                  Go to Real Reel
+                  Go to Website
                 </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="work-cont" ref={el => workContainersRef.current[2] = el}>
+      <div
+        className="work-cont"
+        ref={(el) => (workContainersRef.current[3] = el)}
+      >
         <div className="works-3">
           <h1>Accio Knowledge</h1>
           <div className="explanation">
@@ -136,18 +186,18 @@ function Works() {
                   className="accio-link"
                   target="_blank"
                 >
-                  Go to Accio Knowledge
+                  Go to Website
                 </a>
               </div>
             </div>
-            <img
-              src="https://i.imgur.com/oZ3RCpB.png"
-              className="accio-img"
-            />
+            <img src="https://i.imgur.com/oZ3RCpB.png" className="accio-img" />
           </div>
         </div>
       </div>
-      <div className="work-cont" ref={el => workContainersRef.current[3] = el}>
+      <div
+        className="work-cont"
+        ref={(el) => (workContainersRef.current[4] = el)}
+      >
         <div className="works-4">
           <h1>Modern Family API</h1>
           <div className="explanation">
@@ -176,7 +226,7 @@ function Works() {
                   className="accio-link"
                   target="_blank"
                 >
-                  Go to Modern Family API
+                  Go to Website
                 </a>
               </div>
             </div>

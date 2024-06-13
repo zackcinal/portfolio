@@ -31,6 +31,32 @@
   align-items: center;
 }
 
+.works-0 {
+  width: 60vw;
+  background-color: white;
+  height: 60vh;
+  border-radius: 50px;
+  margin-top: 10px;
+  background: url("https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.works-0 h1 {
+  font-size: 25px;
+  margin-top: 3vh;
+  text-align: center;
+}
+
+.petcare-image {
+  height: 45vh;
+  transform: rotate(20deg);
+}
+
+.petcare-image2 {
+  height: 45vh;
+  transform: rotate(20deg);
+  margin-left: -15vw;
+}
+
 .works-1 {
   width: 60vw;
   background-color: white;
@@ -67,8 +93,8 @@
 .left-side a {
   text-decoration: none;
   background-color: white;
-  width: 10vw;
-  padding: 3px;
+  width: 11vw;
+  padding: 5px;
   border-radius: 20px;
   color: black;
   text-align: center;
@@ -111,7 +137,7 @@
   text-align: center;
 }
 
-.accio-img{
+.accio-img {
   width: 30vw;
   margin-top: -10vh;
   margin-left: -2vw;
@@ -139,12 +165,29 @@
 }
 
 @media (max-width: 430px) {
+  .works-0,
   .works-1,
   .works-2,
   .works-3,
   .works-4 {
     width: 95vw;
     height: 70vh;
+  }
+
+  .images-div {
+    display: flex;
+  }
+
+  .petcare-image {
+    margin-top: -17vh;
+    margin-left: -30vw;
+    transform: none;
+  }
+
+  .petcare-image2 {
+    margin-top: -17vh;
+    margin-left: -50vw;
+    transform: none;
   }
 
   .left-side {
@@ -160,23 +203,23 @@
     margin-top: -24vh;
   }
 
-  .explanation{
+  .explanation {
     flex-direction: column;
   }
 
-  .real-reel-img{
+  .real-reel-img {
     width: 60vw;
     margin-top: -5vh;
     margin-left: 15vw;
   }
 
-  .accio-img{
+  .accio-img {
     width: 70vw;
     margin-top: -20vh;
     margin-left: 10vw;
   }
 
-  .modern-family-img{
+  .modern-family-img {
     width: 25vw;
     height: 20vw;
     padding-right: 0vw;
@@ -184,11 +227,11 @@
     margin-left: 29vw;
   }
 
-  .works-3{
+  .works-3 {
     color: white;
   }
 
-  .links{
+  .links {
     position: relative;
     z-index: 1;
   }
