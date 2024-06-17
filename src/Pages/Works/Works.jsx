@@ -78,10 +78,10 @@ function Works() {
                 src="https://i.imgur.com/G9hTvR2.png"
                 className="petcare-image"
               />
-              <img
+              {/* <img
                 src="https://i.imgur.com/gcG6CWC.png"
                 className="petcare-image2"
-              />
+              /> */}
             </div>
           </div>
         </div>

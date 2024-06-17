@@ -180,15 +180,15 @@
 
   .petcare-image {
     margin-top: -15vh;
-    margin-left: -25vw;
+    /* margin-left: -25vw; */
     transform: none;
   }
 
-  .petcare-image2 {
+  /* .petcare-image2 {
     margin-top: -15vh;
     margin-left: -40vw;
     transform: none;
-  }
+  } */
 
   .left-side {
     justify-content: flex-start;
