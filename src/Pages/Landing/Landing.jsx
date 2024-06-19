@@ -17,7 +17,7 @@ function Landing() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const intervalId = setInterval(() => setIndex(index => index + 1), 2000);
+    const intervalId = setInterval(() => setIndex(index => index + 1), 2500);
     return () => clearInterval(intervalId);
   }, []);
 
