@@ -2,14 +2,6 @@
   margin-top: 50px;
 }
 
-#dark *{
-  color: white;
-}
-
-#dark .lottieInsta {
-  z-index: 0;
-}
-
 .whoami {
   display: flex;
   width: 95vw;

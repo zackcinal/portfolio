@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import TextTransition, { presets } from "react-text-transition";
 import Works from "../Works/Works";
 import Footer from "../Footer/Footer";
-import '../Loading/loading.css';
 
 const TEXTS = [
   " Software Engineer 💻",
