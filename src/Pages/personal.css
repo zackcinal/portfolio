@@ -1,4 +1,4 @@
-.personal-container { 
+.personal-container {
   margin-top: 50px;
 }
 
@@ -16,15 +16,15 @@
   flex-direction: column;
 }
 
-#dark{
+#dark {
   color: white;
 }
 
-#dark .lottieInsta{
+#dark .lottieInsta {
   z-index: 1;
 }
 
-#dark .see-more-insta{
+#dark .see-more-insta {
   position: inherit;
   z-index: 2;
 }
@@ -63,7 +63,7 @@ p.see-more-insta {
   margin-top: -150px;
 }
 
-.instagram-linking{
+.instagram-linking {
   text-decoration: none;
   font-family: "Unbounded", sans-serif;
 }
@@ -127,7 +127,7 @@ p.about-photography {
   font-weight: 300;
 }
 
-.photography-text{
+.photography-text {
   margin-left: 10px;
 }
 
@@ -151,7 +151,7 @@ p.about-photography {
   width: 45vw;
 }
 
-.instagram-linking{
+.instagram-linking {
   position: relative;
 }
 
@@ -180,7 +180,7 @@ h4.travel-info {
   }
 
   p.about-me {
-    width: 90vw;
+    width: 40vw;
     font-size: medium;
   }
 
@@ -189,24 +189,16 @@ h4.travel-info {
     overflow: auto;
   }
 
-  div.maps {
-    width: 500px;
-    align-items: center;
-    flex-direction: column;
-    margin-left: -50px;
-  }
-
   .instagram-link {
     padding: 0;
   }
 
   .whoami {
-    /* padding-left: 40px; */
     padding-right: 0;
     margin-left: -40px;
   }
 
-  .photos-container{
+  .photos-container {
     gap: 0;
     margin-left: -40px;
   }
@@ -215,35 +207,44 @@ h4.travel-info {
     padding-top: 0;
   }
 
-  .img-william{
+  .img-william {
     width: 50vw;
-    margin-top: 200px;
+    margin-top: 50vh;
   }
 
-  .img-me{
-    display: none;
+  .img-me {
+    width: 45vw;
+    overflow: hidden;
+    transform: translateY(0);
+    height: 100%;
+    margin-top: 20vh;
   }
 
-  h4.travel-info{
-    margin-top: 500px;
+  h4.travel-info {
+    margin-top: 20vh;
   }
 
-  .text-content h3{
+  .text-content h3 {
     width: 100vw;
     margin-left: -250px;
   }
 
-  .about-photography{
+  .about-photography {
     display: flex;
     flex-direction: column;
   }
 
-  .instagram-link{
+  .instagram-link {
     margin-left: -100px;
   }
-  
+
   div.photos-container h3 {
     padding-left: 40px;
+  }
+
+  .travel-image {
+    width: 45vw;
+    margin-top: 45vh;
   }
 }
 

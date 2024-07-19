@@ -27,7 +27,7 @@ ul.react-tabs__tab-list {
   display: flex;
   justify-content: center;
   gap: 100px;
-  padding: 40px 0 20px 0;
+  padding: 5px 0 2px 0;
   list-style: none;
   font-size: large;
   font-weight: 700;
@@ -75,6 +75,7 @@ header > h3 {
 
 .react-tabs__tab--selected {
   text-decoration: overline;
+  color: black;
 }
 
 .resume li {
@@ -135,6 +136,22 @@ ul.experience {
   color: black;
 }
 
+#dark .header-name{
+  color: black;
+}
+
+#dark .lets-work-together{
+  color: black;
+}
+
+#dark .resume header h3{
+  color: black;
+}
+
+#dark .resume header ul li svg{
+  color: black;
+}
+
 @media (max-width: 430px) {
   header ul {
     flex-direction: column;
@@ -142,12 +159,15 @@ ul.experience {
 
   .main-prof {
     min-height: 95vh;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: -3vh;
   }
 
   .lets-work-together{
     margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 3vw;
   }
 
   ul.rw-list {

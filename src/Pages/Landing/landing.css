@@ -90,17 +90,18 @@ h2::after {
   .i-am-zack {
     font-size: 18px;
     width: auto;
+    margin-top: 0;
   }
 
   .switch {
-    margin-right: 0;
-    margin-top: 0;
+    margin-top: -6vh;
+    margin-left: 1vw;
   }
 
   .landing-container {
     flex-direction: column;
     margin-top: 2vh;
-    margin-bottom: 10vh;
+    margin-bottom: 3vh;
   }
 
   .sliding-text {
@@ -120,10 +121,6 @@ h2::after {
 
   .my-image-container{
     border-left: none;
-  }
-
-  .hello{
-    margin-top: 7vh;
   }
 
   .Logo{

@@ -63,6 +63,10 @@ a.nav-a:hover {
     justify-content: right;
   }
 
+  .links{
+    gap: 0;
+  }
+
   a:hover {
     font-size: 14px;
     transition: none;

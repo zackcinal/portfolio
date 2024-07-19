@@ -179,8 +179,8 @@
   }
 
   .petcare-image {
-    margin-top: -10vh;
-    /* margin-left: -25vw; */
+    margin-top: -7vh;
+    margin-left: 7vw;
     transform: none;
   }
 
@@ -203,7 +203,7 @@
 
   .real-reel-img {
     width: 60vw;
-    margin-top: -5vh;
+    margin-top: -13vh;
     margin-left: 15vw;
   }
 
