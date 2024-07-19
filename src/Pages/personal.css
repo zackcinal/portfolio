@@ -16,6 +16,19 @@
   flex-direction: column;
 }
 
+#dark{
+  color: white;
+}
+
+#dark .lottieInsta{
+  z-index: 1;
+}
+
+#dark .see-more-insta{
+  position: inherit;
+  z-index: 2;
+}
+
 @keyframes reverse-scroll {
   0% {
     transform: translateY(0);
@@ -48,6 +61,11 @@ p.see-more-insta {
   color: white;
   width: 150px;
   margin-top: -150px;
+}
+
+.instagram-linking{
+  text-decoration: none;
+  font-family: "Unbounded", sans-serif;
 }
 
 .whoami p {
