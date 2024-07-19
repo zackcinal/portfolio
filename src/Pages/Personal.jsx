@@ -45,7 +45,7 @@ function Personal() {
               </p>
             </div>
             <img
-              src="https://i.imgur.com/GnLacTv.jpeg"
+              src="https://i.imgur.com/3rBshJw.jpeg"
               alt="My picture"
               className="img-me"
               style={{ transform: `translateY(${calculateParallax(0.3)}px)` }}
