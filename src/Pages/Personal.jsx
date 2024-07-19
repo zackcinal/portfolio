@@ -23,7 +23,9 @@ function Personal() {
   }, []);
 
   const calculateParallax = (depth) => {
-    return -scrollY * depth;
+    const maxTransform = 200; // Limit the maximum transform value
+    const transformValue = -scrollY * depth;
+    return Math.max(Math.min(transformValue, maxTransform), -maxTransform);
   };
 
   return (
