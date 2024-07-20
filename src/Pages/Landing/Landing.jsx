@@ -48,7 +48,7 @@ function Landing() {
         </div>
         <div className="my-image-container">
           <img
-            src="https://i.imgur.com/PVJqcYF.jpeg"
+            src="https://i.imgur.com/gPZLITZ.jpeg"
             alt="me"
             className="my-image"
           />
