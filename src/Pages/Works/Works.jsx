@@ -51,6 +51,41 @@ function Works() {
         className="work-cont"
         ref={(el) => (workContainersRef.current[0] = el)}
       >
+        <div className="works-4">
+          <h1>Cafe Vista</h1>
+          <div className="explanation">
+            <div className="left-side">
+              <p>
+                Designed and developed a responsive website for Cafe Vista using
+                React, providing customers with access to menus, business
+                information, and image galleries.
+              </p>
+              <h5 className="cards">Built with React Native</h5>
+              <div className="links">
+                <a
+                  href="https://github.com/zackcinal/cafevista"
+                  target="_blank"
+                >
+                  Go to GitHub🔒
+                </a>
+                <a href="https://cafevistahoboken.com" target="_blank">
+                  Go to Website📱
+                </a>
+              </div>
+            </div>
+            <div className="images-div">
+              <img
+                src="https://i.imgur.com/RzwAUZF.png"
+                className="cafevista-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="work-cont"
+        ref={(el) => (workContainersRef.current[1] = el)}
+      >
         <div className="works-0">
           <h1>Pet Care by Kubra</h1>
           <div className="explanation">
@@ -78,17 +113,13 @@ function Works() {
                 src="https://i.imgur.com/G9hTvR2.png"
                 className="petcare-image"
               />
-              {/* <img
-                src="https://i.imgur.com/gcG6CWC.png"
-                className="petcare-image2"
-              /> */}
             </div>
           </div>
         </div>
       </div>
       <div
         className="work-cont"
-        ref={(el) => (workContainersRef.current[1] = el)}
+        ref={(el) => (workContainersRef.current[2] = el)}
       >
         <div className="works-1">
           <h1>code.Pal</h1>
@@ -124,7 +155,7 @@ function Works() {
       </div>
       <div
         className="work-cont"
-        ref={(el) => (workContainersRef.current[2] = el)}
+        ref={(el) => (workContainersRef.current[3] = el)}
       >
         <div className="works-2">
           <h1>The Real Reel</h1>
@@ -161,7 +192,7 @@ function Works() {
       </div>
       <div
         className="work-cont"
-        ref={(el) => (workContainersRef.current[3] = el)}
+        ref={(el) => (workContainersRef.current[4] = el)}
       >
         <div className="works-3">
           <h1>Accio Knowledge</h1>
@@ -196,7 +227,7 @@ function Works() {
       </div>
       <div
         className="work-cont"
-        ref={(el) => (workContainersRef.current[4] = el)}
+        ref={(el) => (workContainersRef.current[5] = el)}
       >
         <div className="works-4">
           <h1>Modern Family API</h1>
